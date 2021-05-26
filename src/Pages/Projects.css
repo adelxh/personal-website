@@ -1,0 +1,15 @@
+
+
+img {
+    border-radius: 70px;
+    margin-left: 14rem;
+    width: 20%;
+    height: 400px;
+    padding: 10px 0 10px 0;
+}
+img:hover {
+    cursor: pointer;
+    height: 410px;
+    width: 23%;
+    transition: 0.7s;
+}
