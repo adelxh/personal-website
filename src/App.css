@@ -1,5 +1,8 @@
 html {
-    background-color: black;
+    background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 ul, li, nav {
    
@@ -11,10 +14,11 @@ ul, li, nav {
  
 }
 
-div, a{
+ a{
     margin-top: 1rem;
     text-decoration: none;
-    color: white;
+    color: black;
+    cursor: pointer;
 }
 a:hover {
     color: orange;
@@ -23,10 +27,10 @@ a:hover {
 }
 
 h1 {
-    font-size: 55px;
-    margin-top: 5rem;
+    font-size: 78px;
+    padding-top: 30vh;
     margin-left: 14rem;
-    font-family: sans-serif;
+    font-family: Tahoma;
 }
 p {
     margin-top: -20px;
@@ -46,11 +50,41 @@ p {
     margin-left: 35rem;
 }
 
-.about-me {
-    font-size: 24px;
-    width: 50%;
-    font-weight: 300;
-    word-spacing: 3px;
-    font-family: sans-serif;
+
+
+
+
+/* about me section  */
+
+
+#about-section > p {
+    font-size: 25px;
+    width: 75%;
+    word-spacing: 2px;
+    line-height: 3.4rem;
+}
+
+.my-work {
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.my-work:hover {
+    color: white;
+    font-style: none;
+}
+
+/* my work section */
+
+#my-work {
+  
+    padding: 0;
+    margin-top: 7rem;
+    background-color: rgba(243,240,240,0.3);
+}
+
+#my-work > h1 {
+    padding: 0;
 }
 

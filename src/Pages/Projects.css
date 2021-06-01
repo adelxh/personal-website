@@ -1,15 +1,28 @@
 
 
 img {
-    border-radius: 70px;
+    border-radius: 30px;
     margin-left: 14rem;
-    width: 20%;
-    height: 400px;
+    width: 270px;
+    height: 300px;
     padding: 10px 0 10px 0;
+    justify-content: center;
 }
-img:hover {
-    cursor: pointer;
-    height: 410px;
-    width: 23%;
-    transition: 0.7s;
+
+/* 
+.project2 {
+    position: absolute;
+    margin-left: 25rem;
+    margin-top: -20.1rem;
+}
+
+.project2 > h5 {
+    margin-left: 19rem;
+    margin-top: -2px;
+} */
+
+.project1 {
+    border: 1px solid white;
+    width: 40%;
+    background-color: gray;
 }
