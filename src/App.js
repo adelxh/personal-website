@@ -7,9 +7,13 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import {Link, animateScroll as scroll } from "react-scroll";
 import Typical from 'react-typical';
+import workPic from './work1.png'
+import workPic2 from './work2.png'
+import './Phone.css'
 // import About from './Pages/About';
 // import Home from './Pages/Home';
 // import Work from './Pages/Work';
+// import Contact from './Pages/Contact'
 
 
 
@@ -18,7 +22,11 @@ export const App = () => {
   useEffect(() => {
     AOS.init(); 
    }, []);
-   
+
+   const githubLink = "https://github.com/adelxh/to-do";
+   const recipeAppLive = "https://epic-hamilton-053aab.netlify.app";
+   const myGithub = "https://github.com/adelxh";
+   const foodAppGithub = "https://github.com/adelxh/react-recipe-app"; 
   
     return (
         <Router>
@@ -29,7 +37,7 @@ export const App = () => {
           <li><Link to="/">Home</Link></li>  
           <li><Link to="about-section" spy={true} smooth={true} duration={1100}>About</Link></li>
           <li><Link to="my-work" spy={true} smooth={true} duration={1100}>My Work</Link></li>
-          <li><Link to="/">Contact Me</Link></li>
+          <li><Link to="contact" spy={true} smooth={true} duration={1200}>Contact Me</Link></li>
             </ul>    
         </nav>
        
@@ -40,7 +48,7 @@ export const App = () => {
              <h1 data-aos="fade-right" data-aos-duration="2000">Adel Akhmed</h1>
           </Parallax>
              <Parallax speed={3}>
-        <p>Hi, My name is Adel. I am a{' '} <Typical loop={Infinity} wrapper='b'
+        <p className="intro">Hi, My name is Adel. I am a{' '} <Typical loop={Infinity} wrapper='b'
           steps={[
             'Full-Stack Web Developer', 1000,
             'Web Designer', 500, 
@@ -54,30 +62,65 @@ export const App = () => {
         </Parallax>
         </div>
      
+     
         <div id="about-section">
           
 
-          <h1 data-aos="fade-down" data-aos-duration="3000">Learn More About Me!</h1>
-          <p data-aos="fade-left" data-aos-duration="2500">Hello My name is Adel Akhmed. I am very happy you came across my website. I am a Full-Stack Web Developer who has great passion in creating projects for the world to see. I have several years' experience in Front End Frameworks such as ReactJS and Angular as well as back end technologies such as NodeJS. I am most familier with the MERN stack in which I build the majority of my projects and the projects for my clients as I am a Freelance Web Developer. Please have a look at my recent work. <a className="my-work" href="">My Work ></a></p>
-       
+        
+        <h1 data-aos="fade-down" data-aos-duration="3000">Learn More About Me!</h1>
+
+          <p data-aos="fade-left" data-aos-duration="2500" className="about">Hello My name is Adel Akhmed. I am very happy you came across my website. I am a Full-Stack Web Developer who has great passion in creating projects for the world to see. I have several years' experience in Front End Frameworks such as ReactJS and Angular as well as back end technologies such as NodeJS. I am most familier with the MERN stack in which I build the majority of my projects and the projects for my clients as I am a Freelance Web Developer. Please have a look at my recent work. <Link to="my-work" spy={true} smooth={true} duration={500} className="my-work" >My Work {' > '}</Link></p>
+
         </div>
+       
 
         <div id="my-work">
-          <h1>My Projects</h1>
+          <h1 data-aos="zoom-in-right" data-aos-duration="2000">My Projects</h1>
+   
+          <div data-aos="flip-right" data-aos-duration="2000" className="work1">
+            <h5>To-Do List</h5>
+            <img src={workPic} alt="" />
+            <p>Vanilla Javascript Project in which you can add tasks or delete them. The Date is displayed as well. </p>
+            <a href={githubLink} target="_blank" className="btn-view-1">View On github</a>
+          </div>
+         
+ 
+          <div data-aos="flip-right" data-aos-duration="2000" className="work2">
+            <h5>Food Recipe App</h5>
+            <img src={workPic2} alt="" />
+            <p>ReactJS project in which I used food API. I connected it to my website and implemented search bar in which a user is able to </p>
+            <a href={recipeAppLive} target="_blank" className="btn-view-1">View Live</a>
+            <a href={foodAppGithub} target="_blank" className="btn-view-2">View On Github</a>
+          </div>
+        
 
-          
 
+
+
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="3000" className="more-projects">
+          <h3>To view more projects please visit my github page</h3>
+          <a href={myGithub} target="_blank">Github</a>
+        </div>
+
+        {/* contact me section  */}
+
+        <div data-aos="zoom-in" data-aos-duration="2500" id="contact" className="contact-me">
+          <h1>Contact Me!</h1>
+          <a href="mailto:adelxh@gmail.com?subject = Feedback&body = Message">
+          Send Email
+          </a>
         </div>
     
        
       
       {/* routing system */}
-      {/* <Switch>
-          <Route path="/" exact component={Home} />
-         <Route  path="/about" component={About} />
-         <Route path="/work" component={Work} />
+      {/* <Switch> */}
+         
+         {/* <Route  path="/contact" component={Contact} /> */}
+  
  
-      </Switch> */}
+      {/* </Switch>  */}
     </div>
 
     </Router>
