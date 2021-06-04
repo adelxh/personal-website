@@ -3,6 +3,7 @@ import './App.css'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Slide from 'react-reveal/Slide'
 import Parallax from 'react-rellax'; 
+import { Sidenav } from 'rsuite'; 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import {Link, animateScroll as scroll } from "react-scroll";
@@ -23,6 +24,21 @@ export const App = () => {
     AOS.init(); 
    }, []);
 
+   const scrollToTop = () => {
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      }); 
+   }
+
+   const openNav = () => {
+     document.getElementById('sidenav').style.width='250px'; 
+
+   }
+   const closeNav = () => {
+    document.getElementById('sidenav').style.width='0';
+   }
+
    const githubLink = "https://github.com/adelxh/to-do";
    const recipeAppLive = "https://epic-hamilton-053aab.netlify.app";
    const myGithub = "https://github.com/adelxh";
@@ -32,16 +48,14 @@ export const App = () => {
         <Router>
     <div>
         {/* navigation system */}
-        <nav>
-            <ul>
-          <li><Link to="/">Home</Link></li>  
-          <li><Link to="about-section" spy={true} smooth={true} duration={1100}>About</Link></li>
-          <li><Link to="my-work" spy={true} smooth={true} duration={1100}>My Work</Link></li>
-          <li><Link to="contact" spy={true} smooth={true} duration={1200}>Contact Me</Link></li>
-            </ul>    
-        </nav>
-       
-        
+        <div id="sidenav" className="sidenav">
+          <a href="javascript:void(0)" className="close-btn" onClick={closeNav}>&times;</a>
+          <Link to="about-section" spy={true} smooth={true} duration={1500}>About Me</Link>
+          <Link to="my-work" spy={true} smooth={true} duration={1500}>My Work</Link>
+          <Link to="contact" spy={true} smooth={true} duration={1500}>Contact Me</Link>
+
+        </div>
+        <span style={{fontSize: '30px'}} onClick={openNav}>&#9776;</span>
         <div>
           <Parallax speed={2}>
 
@@ -111,6 +125,8 @@ export const App = () => {
           Send Email
           </a>
         </div>
+
+        <Link onClick={scrollToTop} spy={true} smooth={true} duration={1500}>Scroll to top</Link>
     
        
       

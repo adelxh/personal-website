@@ -56,12 +56,32 @@
     .work2 {
        margin-top: 5rem;
         margin-left: 3rem;
+        padding-bottom: 60px;
         width: 50%;
     }
     .work2 > img {
         width: 140px;
         
     }
+
+    .btn-view-2 {
+        position: absolute;
+        margin-left: -5rem;
+        margin-top: 2rem;
+       
+    }
+
+    .more-projects > a {
+        margin-left: 8.5rem;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .contact-me > h1 {
+        margin-left: 5rem;
+        font-size: 30px;
+    }
+
+
       
     
 }

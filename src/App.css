@@ -4,20 +4,50 @@ background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-2
 background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-ul, li, nav {
-   
-    text-decoration: none;
-    list-style: none;
-    display: inline;
-    padding-left: 70px;
-   padding-top: 5px;
- 
-}
+/* navigation */
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(27, 56, 56, 0.76);
+    overflow-x: hidden;
+    transition: 1.2s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #68e9ee;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav .close-btn {
+    position: absolute;
+    top: 0;
+    color: white;
+    right: 25px;
+    font-size: 46px;
+    margin-left: 50px;
+    display: inline;
+  }
+  .close-btn {
+      height: 50px;
+      width: 50px;
+  }
  a{
     margin-top: 1rem;
     text-decoration: none;
     color: black;
+    cursor: pointer;
+}
+
+span {
     cursor: pointer;
 }
 a:hover {
