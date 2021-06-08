@@ -79,11 +79,11 @@ export const App = () => {
              <h1 data-aos="fade-right" data-aos-duration="2000">Adel Akhmed</h1>
           </Parallax>
              <Parallax speed={3}>
-        <p className="intro">Hi, My name is Adel. I am a{' '} <Typical loop={Infinity} wrapper='b'
+        <p className="intro">Hi, My name is Adel. I am a{' '} <Typical loop={3} wrapper='b'
           steps={[
             'Full-Stack Web Developer', 1000,
-            'Web Designer', 500, 
-            'App Developer', 500
+            'Web Designer', 1000, 
+            'App Developer', 1000
           ]} />
         </p>
         </Parallax>
