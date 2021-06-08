@@ -220,3 +220,46 @@ padding: 20px;
 
   
 }
+
+
+/* to top button */
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    opacity: 65%;
+    pointer-events: auto;
+    transition: all .4s;
+
+}
+.to-top:hover {
+    opacity: 85%;
+}
+
+.to-top > a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.to-top > a {
+    margin-left: 7.9px;
+    margin-top: 1rem;
+    font-size: 56px;
+}
+
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}

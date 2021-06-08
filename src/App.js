@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Slide from 'react-reveal/Slide'
+import {BrowserRouter as Router} from 'react-router-dom';
 import Parallax from 'react-rellax'; 
-import { Sidenav } from 'rsuite'; 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import {Link, animateScroll as scroll } from "react-scroll";
+import {Link } from "react-scroll";
 import Typical from 'react-typical';
 import workPic from './work1.png'
 import workPic2 from './work2.png'
@@ -20,16 +18,35 @@ import './Phone.css'
 
 
 export const App = () => {
+
+
   useEffect(() => {
     AOS.init(); 
    }, []);
 
+
+
+   const [visible, setVisible] = useState(false); 
+
+   const toggleVisible = () => {
+     if (window.pageYOffset > 300) {
+       setVisible(true); 
+     }
+     else if (window.pageYOffset <=300) {
+       setVisible(false); 
+     }
+   }
    const scrollToTop = () => {
+   
     window.scrollTo({
       top: 0, 
       behavior: 'smooth'
       }); 
+
+    
    }
+
+   window.addEventListener("scroll", toggleVisible);
 
    const openNav = () => {
      document.getElementById('sidenav').style.width='250px'; 
@@ -125,9 +142,9 @@ export const App = () => {
           Send Email
           </a>
         </div>
-
-        <Link onClick={scrollToTop} spy={true} smooth={true} duration={1500}>Scroll to top</Link>
-    
+            <div className="to-top" style={{display: visible ? 'inline' : 'none'}}>
+        <a onClick={scrollToTop} spy={true} smooth={true} duration={1500} >^</a>
+        </div>
        
       
       {/* routing system */}
