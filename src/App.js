@@ -54,6 +54,7 @@ export const App = () => {
    }
    const closeNav = () => {
     document.getElementById('sidenav').style.width='0';
+ 
    }
 
    const githubLink = "https://github.com/adelxh/to-do";
@@ -67,9 +68,10 @@ export const App = () => {
         {/* navigation system */}
         <div id="sidenav" className="sidenav">
           <a href="javascript:void(0)" className="close-btn" onClick={closeNav}>&times;</a>
-          <Link to="about-section" spy={true} smooth={true} duration={1500}>About Me</Link>
-          <Link to="my-work" spy={true} smooth={true} duration={1500}>My Work</Link>
-          <Link to="contact" spy={true} smooth={true} duration={1500}>Contact Me</Link>
+          <Link to="about-section" spy={true} smooth={true}>About</Link>
+          <Link to="my-work" spy={true} smooth={true}>Projects</Link>
+          <Link to="contact" spy={true} smooth={true}>Contact</Link>
+
 
         </div>
         <span style={{fontSize: '30px'}} onClick={openNav}>&#9776;</span>
@@ -78,7 +80,7 @@ export const App = () => {
 
              <h1 data-aos="fade-right" data-aos-duration="2000">Adel Akhmed</h1>
           </Parallax>
-             <Parallax speed={3}>
+          
         <p className="intro">Hi, My name is Adel. I am a{' '} <Typical loop={3} wrapper='b'
           steps={[
             'Full-Stack Web Developer', 1000,
@@ -86,7 +88,7 @@ export const App = () => {
             'App Developer', 1000
           ]} />
         </p>
-        </Parallax>
+ 
         {/* <a className="learn-more" href="#">Learn More</a> */}
         <Parallax speed={3}>
         <Link to="about-section" spy={true} smooth={true}  duration={1000} className="learn-more">Learn More</Link>
