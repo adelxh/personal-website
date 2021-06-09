@@ -7,6 +7,21 @@ background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, F
 a {
     cursor: pointer;
 }
+
+/* circle */
+.circle {
+    border: 1px solid white;
+    border-radius: 80px;
+    background: white;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 66%;
+    margin-left: 35rem;
+    -webkit-box-shadow: -1px 6px 14px 5px rgba(0,0,0,0.64); 
+box-shadow: -1px 6px 14px 5px rgba(0,0,0,0.64);
+}
 /* navigation */
 .sidenav {
     height: 100%;
@@ -17,7 +32,7 @@ a {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-top: 60px;
   }
   
@@ -151,13 +166,15 @@ img {
 .btn-view-1 {
   color: black;
   border: 1px solid white;
-  padding: 5px;  
+  padding: 5px; 
+  text-decoration: none; 
 }
 .btn-view-2 {
     color: black;
     border: 1px solid white;
     padding: 5px;  
     margin-left: 2rem;
+    text-decoration: none;
   }
 .work2 {
     border: 2px solid grey;
@@ -194,6 +211,8 @@ padding: 20px;
     margin-left: 41.5rem;
     font-size: 25px;
     border: 1px solid white;
+    text-decoration: none;
+    color: white;
 
     padding: 10px;
 }
@@ -225,6 +244,7 @@ padding: 20px;
     font-size: 25px;
     border: 1px solid white;
     padding: 10px;
+    text-decoration: none;
 
   
 }
