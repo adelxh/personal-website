@@ -99,7 +99,7 @@ export const App = () => {
         
         <h1 data-aos="fade-down" data-aos-duration="3000">Learn More About Me!</h1>
 
-          <p data-aos="fade-left" data-aos-duration="2500" className="about">Hello My name is Adel Akhmed. I am very happy you came across my website. I am a Full-Stack Web Developer who has great passion in creating projects for the world to see. I have several years' experience in Front End Frameworks such as ReactJS and Angular as well as back end technologies such as NodeJS. I am most familier with the MERN stack in which I build the majority of my projects and the projects for my clients as I am a Freelance Web Developer. Please have a look at my recent work. <Link to="my-work" spy={true} smooth={true} duration={500} className="my-work" >My Work {' > '}</Link></p>
+          <p data-aos="fade-right" data-aos-duration="2500" className="about">Hello My name is Adel Akhmed. I am very happy you came across my website. I am a Full-Stack Web Developer who has great passion in creating projects for the world to see. I have several years' experience in Front End Frameworks such as ReactJS and Angular as well as back end technologies such as NodeJS. I am most familier with the MERN stack in which I build the majority of my projects and the projects for my clients as I am a Freelance Web Developer. Please have a look at my recent work. <Link to="my-work" spy={true} smooth={true} duration={500} className="my-work" >My Work {' > '}</Link></p>
 
         </div>
        
