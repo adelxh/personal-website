@@ -81,7 +81,7 @@ export const App = () => {
              <h1 data-aos="fade-right" data-aos-duration="2000">Adel Akhmed</h1>
           </Parallax>
           <Parallax speed={3}>
-          <div className="circle"></div>
+          
           </Parallax>
         <p className="intro">Hi, My name is Adel. I am a <b>Full-Stack Web Developer</b>
         </p>
@@ -128,22 +128,22 @@ export const App = () => {
 
 
         </div>
-        <div data-aos="zoom-in" data-aos-duration="3000" className="more-projects">
+        <div data-aos-duration="3000" className="more-projects">
           <h3>To view more projects please visit my github page</h3>
           <a href={myGithub} target="_blank">Github</a>
         </div>
 
         {/* contact me section  */}
 
-        <div data-aos="zoom-in" data-aos-duration="2500" id="contact" className="contact-me">
+        <div data-aos-duration="2500" id="contact" className="contact-me">
           <h1>Contact Me!</h1>
           <a href="mailto:adelxh@gmail.com?subject = Feedback&body = Message">
           Send Email
           </a>
         </div>
-            <div className="to-top" style={{display: visible ? 'inline' : 'none'}}>
-        <a onClick={scrollToTop} spy={true} smooth={true} duration={1500} >^</a>
-        </div>
+            {/* <div className="to-top" style={{display: visible ? 'inline' : 'none'}}> */}
+        {/* <a onClick={scrollToTop} spy={true} smooth={true} duration={1500} >^</a> */}
+        {/* </div> */}
        
       
       {/* routing system */}

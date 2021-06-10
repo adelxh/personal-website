@@ -3,91 +3,84 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-      html {
-        background: #acb6e5; 
-        /* background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  Chrome 10-25, Safari 5.1-6 */
-        /* background: linear-gradient(to right, #86fde8, #acb6e5); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-      }
-      h1 {
-          font-size: 50px;
-          width: 100%;
-          margin-left: 1rem;
-      }
-      nav {
-          display: none;
-      }
-      .intro, .about {
-          font-size: 15px;
-          width: 95%;
-          margin-left: 1rem;
-      }
-      .learn-more {
-          display: none;
-      }
+        html {
+            background: #acb6e5;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+        }
 
-      /* about me */
-     
-      #about-section > h1 {
-          font-size: 35px;
-      }
-      #about-section > p {
-          margin-top: 10px;
-          font-size: 20px;
-          width: 84%;
-          text-align: center;
-          line-height: 2rem;
-          
-      }
-    #my-work {
-        padding: 10px;
-       width: 100%;
-        margin-left: 0px;
-        display: block;
-    }
-    .work1 {
-        margin-left: 3rem;
-        width: 50%;
-    }
-    img {
-        height: 100px;
-        width: 100px;
-    }
-    .work2 {
-       margin-top: 5rem;
-        margin-left: 3rem;
-        padding-bottom: 60px;
-        width: 50%;
-    }
-    .work2 > img {
-        width: 140px;
-        
-    }
+        span {
+            margin-top: -2rem;
+            position: fixed;
+        }
+        h1 {
+            font-size: 50px;
+            margin-left: 1rem;
+        }
+        .intro, .about {
+            margin-top: 2rem;
+            margin-left: 1rem;
+            font-size: 15px;
+        }
+        .learn-more {
+            margin-left: 1rem;
+        }
+        /* about me section */
+        #about-section > p {
+            font-size: 20px;
+            width: 80%;
+            line-height: 1.5rem;
+            
+        }
 
-    .btn-view-2 {
+       #my-work {
+           padding: 0;
+       }
+       #my-work > h1 {
+           font-size: 40px;
+           text-align: center;
+       }
+
+       .work1 {
+           margin-left: 5rem;
+           width: 50%;
+
+       }
+       img {
+           height: 200px;
+           margin-left: -1.5rem;
+       }
+    
+       .work2 {
+           margin-left: 5rem;
+           width: 50%;
+           margin-top: 4rem;
+           padding-bottom: 60px;
+       }
+       .work2 > img {
+           width: 150px;
+       }
+       .btn-view-2 {
         position: absolute;
         margin-left: -5rem;
         margin-top: 2rem;
-       
-    }
+       }
 
-    .more-projects > a {
-        margin-left: 8.5rem;
-        font-size: 20px;
-        padding: 5px;
-    }
-    .contact-me > h1 {
-        margin-left: 5rem;
-        font-size: 30px;
-    }
+       /* more projects */
+       .more-projects > a {
+           margin-left: 140px;
+           
+       }
+       /* contact me */
+       .contact-me > h1 {
+            margin-left: 6rem;
+            font-size: 30px;
+       }
+       .contact-me > a {
+           margin-left: 110px;
 
-    .contact-me > a {
-        margin-left: 6rem;
-        margin-top: 5rem;
-        padding: 10px;
-        font-size: 25px;
-    }
-
+       }
 
       
     
