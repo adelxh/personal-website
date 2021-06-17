@@ -206,7 +206,7 @@ font-size: 30px;
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1026px) {
 .work1 {
     margin-left: 5rem;
     width: 35%;
@@ -232,7 +232,7 @@ font-size: 30px;
 }
 
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1445px) {
 
     .work1 {
         width: 25%;
