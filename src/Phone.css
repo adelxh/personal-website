@@ -29,8 +29,8 @@
         /* about me section */
         #about-section > p {
             font-size: 20px;
-            width: 80%;
-            line-height: 1.5rem;
+            width: 85%;
+            line-height: 1.6rem;
             
         }
 
@@ -85,6 +85,79 @@
       
     
 }
+@media (min-width : 764px) and (max-width: 769px){ 
+    h1 {
+        margin-left: 1rem;
+    }
+    .intro, .about {
+        margin-left: 1rem;
+        font-size: 35px;
+    }
+    .learn-more {
+        margin-left: 1rem;
+        font-size: 25px;
+    }
+
+    #about-section > p {
+        font-size: 40px;
+        width: 95%;
+        word-spacing: 2px;
+        line-height: 3.5rem;
+    }
+    .work1 > h5 {
+        font-size: 40px;
+    }
+ 
+    .work1 {
+        margin-left: 9rem;
+        width: 50%;
+
+    }
+    .work1 > p{
+font-size: 30px;
+    }
+    .btn-view-1 {
+        font-size: 35px;
+    }
+    img {
+        height: 400px;
+    }
+
+    .work2 {
+        margin-left: 9rem;
+        width: 50%;
+        margin-top: 5rem;
+        padding-bottom: 90px;
+
+    }
+    .work2 > p{
+    font-size: 30px;
+    }
+    .btn-view-2 {
+        position: absolute;
+          margin-top: 4rem;
+        margin-left: -10rem;
+       font-size: 35px;
+       }
+
+       .more-projects > h3 {
+           font-size: 30px;
+       }
+       .more-projects > a {
+           margin-left: 21rem;
+       }
+
+       .contact-me > h1 {
+            margin-left: 15rem;
+       }
+       .contact-me > a {
+           margin-left: 19rem;
+       }
+
+
+  
+
+}
 
 /* 1920 screens, ilans screen */
 @media (min-width : 1805px){ 
@@ -94,6 +167,125 @@
 }
 
 
-@media (min-width : 414px) and (max-width: 420px){ 
+@media (min-width : 320px) and (max-width: 325px){ 
    
+    .work1 {
+        margin-left: 3rem;
+    }
+    .work1 > img {
+        margin-left: -2.3rem;
+    }
+    .work2 {
+        margin-left: 3rem;
+    }
+    .work2 > img {
+        margin-left: -2rem;
+    }
+
+    .more-projects > a {
+        margin-left: 7rem;
+    }
+    .contact-me > h1 {
+        margin-left: 4.5rem;
+    }
+    .contact-me > a {
+        margin-left: 5.5rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .work2 {
+        margin-left: 80rem;
+    }
+    .work2 > h5 {
+        font-size: 50px;
+    }
+
+
+    
+}
+
+
+@media (min-width: 1024px) {
+.work1 {
+    margin-left: 5rem;
+    width: 35%;
+}
+
+.work2 {
+    margin-left: 33rem;
+    width: 35%;
+}
+
+.more-projects > a {
+    margin-left: 28rem;
+}
+.more-projects > h3 {
+    font-size: 30px;
+}
+.contact-me > h1 {
+    margin-left: 23rem;
+}
+.contact-me > a {
+    margin-left: 26.5rem;
+}
+}
+
+
+@media (min-width: 1440px) {
+
+    .work1 {
+        width: 25%;
+        
+    }
+    .work1 > p {
+        font-size: 25px;
+    }
+    .work2 {
+        width: 25%;
+        margin-left: 42rem;
+        margin-top: -40rem;
+
+    }
+    .work2 > p {
+        font-size: 25px;
+        
+    }
+}
+
+@media (min-width: 2560px) {
+    .work1 {
+        width: 20%;
+        margin-left: 13rem;
+    }
+    .work1 > img {
+        margin-left: 3rem;
+    }
+    .work2 {
+        margin-left: 90rem;
+        width: 20%;
+        margin-top: -38.4rem;
+    }
+    .work2 > h5 {
+        font-size: 15px;
+        
+    }
+    .work2 > img {
+        margin-left: 3rem;
+    }
+
+    .more-projects > a {
+        margin-left: 73rem;
+    }
+
+    .contact-me > h1 {
+        margin-left: 70rem;
+    }
+    .contact-me > a {
+        margin-left: 71rem;
+    }
+
+    #about-section > p {
+        font-size: 35px;
+    }
 }

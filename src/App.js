@@ -107,7 +107,7 @@ export const App = () => {
         <div id="my-work">
           <h1 data-aos="zoom-in-right" data-aos-duration="2000">My Projects</h1>
    
-          <div data-aos="flip-right" data-aos-duration="2000" className="work1">
+          <div data-aos="flip-right" data-aos-duration="1000" className="work1">
             <h5>To-Do List</h5>
             <img src={workPic} alt="" />
             <p>Vanilla Javascript Project in which you can add tasks or delete them. The Date is displayed as well. </p>
@@ -115,7 +115,7 @@ export const App = () => {
           </div>
          
  
-          <div data-aos="flip-right" data-aos-duration="2000" className="work2">
+          <div data-aos="flip-right" data-aos-duration="1000" className="work2">
             <h5>Food Recipe App</h5>
             <img src={workPic2} alt="" />
             <p>ReactJS project in which I used food API. I connected it to my website and implemented search bar in which a user is able to </p>
