@@ -32,6 +32,7 @@
             width: 85%;
             line-height: 1.6rem;
             
+            
         }
 
        #my-work {
@@ -81,7 +82,34 @@
            margin-left: 110px;
 
        }
+       .hovered-img {margin-left: 2rem;}
+       .react-img {
+           position: absolute;
+           margin-left: -1rem;
+           height: 100px;
+       }
+       .javascript-img {
+           position: absolute;
+           margin-top:1rem;
+           margin-left: 7rem;
+           padding-bottom: 10rem;
+           height: 100px;
+       }
+       .css-img {
+           position: absolute;
+           margin-left: -1rem;
+           margin-top: 10rem;
+           height: 100px;
+       }
 
+       .node-img {
+           position: absolute;
+           height: 100px;
+            margin-top: 10rem;
+            margin-left: 7rem;
+
+       }
+    
       
     
 }
@@ -91,7 +119,7 @@
     }
     .intro, .about {
         margin-left: 1rem;
-        font-size: 35px;
+        font-size: 30px;
     }
     .learn-more {
         margin-left: 1rem;
@@ -105,7 +133,7 @@
         line-height: 3.5rem;
     }
     .work1 > h5 {
-        font-size: 40px;
+        font-size: 25px;
     }
  
     .work1 {
@@ -114,10 +142,10 @@
 
     }
     .work1 > p{
-font-size: 30px;
+font-size: 20px;
     }
     .btn-view-1 {
-        font-size: 35px;
+        font-size: 30px;
     }
     img {
         height: 400px;
@@ -129,19 +157,23 @@ font-size: 30px;
         margin-top: 5rem;
         padding-bottom: 90px;
 
+
+    }
+    .work2 > h5 {
+        font-size: 25px;
     }
     .work2 > p{
-    font-size: 30px;
+    font-size: 20px;
     }
     .btn-view-2 {
         position: absolute;
           margin-top: 4rem;
-        margin-left: -10rem;
-       font-size: 35px;
+        margin-left: -9rem;
+       font-size: 30px;
        }
 
        .more-projects > h3 {
-           font-size: 30px;
+           font-size: 25px;
        }
        .more-projects > a {
            margin-left: 21rem;
@@ -149,10 +181,34 @@ font-size: 30px;
 
        .contact-me > h1 {
             margin-left: 15rem;
+            
        }
        .contact-me > a {
            margin-left: 19rem;
        }
+
+       /*skills section */
+       .hovered-img > img {position: absolute;}
+       .react-img, .javascript-img, .css-img, .node-img {
+           height: 150px;
+       }
+       .react-img {
+        
+       }
+       .javascript-img {
+           margin-left: 25rem;
+       }
+       .css-img {
+           margin-top: 10rem;
+           margin-left: 4rem;
+           
+       }
+       .node-img {
+        margin-left: 27rem;
+        margin-top: 10rem;
+       }
+
+       
 
 
   
@@ -160,7 +216,34 @@ font-size: 30px;
 }
 
 /* 1920 screens, ilans screen */
-@media (min-width : 1805px){ 
+@media (min-width : 1805px) and (max-width: 1921px){ 
+    .hovered-img {
+        margin-left: 15rem;
+    }
+    .work1 {
+        margin-top: -2rem;
+        padding-bottom: 10px;
+    }
+    .work2 {
+        margin-top: -34rem;
+        margin-left: 60rem;
+
+    }
+    .work1 > img {
+        margin-left: 4rem;
+    }
+    .work2 > img {
+        margin-left: 4rem;
+    }
+    .more-projects > a {
+        margin-left: 55rem;
+    }
+    .contact-me h1 {
+        margin-left: 50rem;
+    }
+    .contact-me a {
+        margin-left: 54rem;
+    }
  
   
 
@@ -191,14 +274,31 @@ font-size: 30px;
     .contact-me > a {
         margin-left: 5.5rem;
     }
+    .hovered-img {
+        margin-left: -1rem;
+    }
 }
 
 @media (min-width: 2560px) {
+    #my-work {
+        height: 1000px;
+    }
+   .work1 {
+       position: absolute;
+
+   }
     .work2 {
+        position: absolute;
         margin-left: 80rem;
+        margin-top: 10rem;
     }
     .work2 > h5 {
         font-size: 50px;
+    }
+
+    /* skills section */
+    .hovered-img {
+        margin-left: 30rem;
     }
 
 
@@ -232,42 +332,27 @@ font-size: 30px;
 }
 
 
-@media (min-width: 1440px) and (max-width: 1445px) {
 
-    .work1 {
-        width: 25%;
-        
-    }
-    .work1 > p {
-        font-size: 25px;
-    }
-    .work2 {
-        width: 25%;
-        margin-left: 42rem;
-        margin-top: -40rem;
 
-    }
-    .work2 > p {
-        font-size: 25px;
-        
-    }
-}
-
-@media (min-width: 2560px) {
+@media (min-width: 2559px) and (max-width: 2561px) {
     .work1 {
         width: 20%;
-        margin-left: 13rem;
+        margin-left: 25rem;
+    }
+    .work1 h5 {
+        font-size: 25px;
     }
     .work1 > img {
         margin-left: 3rem;
     }
     .work2 {
+        position: absolute;
         margin-left: 90rem;
         width: 20%;
-        margin-top: -38.4rem;
+        margin-top: -1.4rem;
     }
     .work2 > h5 {
-        font-size: 15px;
+        font-size: 25px;
         
     }
     .work2 > img {
@@ -287,5 +372,26 @@ font-size: 30px;
 
     #about-section > p {
         font-size: 35px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 430px) {
+
+    .work1 > img {
+        margin-left: -0.6rem;
+    }
+
+    .work2 > img {
+        margin-left: -0.6rem;
+    }
+    .more-projects > a {
+        margin-left: 10rem;
+    }
+
+    .contact-me > h1 {
+        margin-left: 7rem;
+    }
+    .contact-me > a {
+        margin-left: 8rem;
     }
 }
